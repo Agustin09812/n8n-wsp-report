@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Sessions</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="card p-4 text-center">
+
+          <h3 class="mb-4">Conectar nueva sesión</h3>
+
+          <div class="input-group mb-3">
+            <input type="text" id="sessionId" class="form-control" placeholder="Nombre de la sesión">
+            <button class="btn btn-dark" onclick="generateQR()">Generar QR</button>
+          </div>
+
+          <div id="status" class="status text-warning">
+            Esperando acción...
+          </div>
+
+          <img id="qrImage" class="mx-auto">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
